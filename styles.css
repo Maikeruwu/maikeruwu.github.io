@@ -1,0 +1,35 @@
+* {
+    color: white;
+}
+button, input {
+    color: black;
+}
+.big {
+    font-size: 45pt;
+}
+.center-top {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    text-align: center;
+}
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    text-align: center;
+}
+.item {
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 5px;
+
+    float:left;
+    position: relative;
+    margin: 10px;
+    text-decoration: none;
+}

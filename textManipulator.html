@@ -16,22 +16,22 @@
             <input name="altNormal" id="altNormal" placeholder="Normaler Text" autofocus style="float: left; text-align: left;">
             <button onclick="altCase()" style="float: left; text-align: left;">Go!</button><br>
             <input name="alt" id="alt" placeholder="aLtErNaTiNg CaSe" readonly style="float: left; text-align: left;">
-            <button onclick="clipboard('alt')"><img src="https://cdn.discordapp.com/attachments/800320654409859103/961296730060652634/clipart2319690.png" height="17px" style="float: left; text-align: left;"></button>
+            <button onclick="clipboard('alt')"><img src="/assets/clipboard.png" height="17px" style="float: left; text-align: left;"></button>
         </fieldset><br>
         <fieldset>
             <legend id="spaceLegend">Leerzeichen</legend>
             <input name="spaceNormal" id="spaceNormal" placeholder="Normaler Text" style="float: left; text-align: left;">
             <button onclick="spaceCase()" style="float: left; text-align: left;">Go!</button><br>
             <input name="space" id="space" placeholder="L e e r z e i c h e n" readonly style="float: left; text-align: left;">
-            <button onclick="clipboard('space')"><img src="https://cdn.discordapp.com/attachments/800320654409859103/961296730060652634/clipart2319690.png" height="17px" style="float: left; text-align: left;"></button>
+            <button onclick="clipboard('space')"><img src="/assets/clipboard.png" height="17px" style="float: left; text-align: left;"></button>
         </fieldset><br>
         <fieldset>
             <legend id="figletLegend">Figlet</legend>
             <input name="figletNormal" id="figletNormal" placeholder="Normaler Text">
             <button onclick="figlet()">Go!</button><br>
             <pre id="figlet" style="text-align: left; "></pre>
-            <button onclick="clipboard('figlet')"><img src="https://cdn.discordapp.com/attachments/800320654409859103/961296730060652634/clipart2319690.png" height="17px" style="float: left;"></button>
-            <button onclick="navigator.clipboard.writeText('```\n' + document.getElementById('figlet').innerHTML.replaceAll('<br>', '\n') + '\n```\n');"><img src="https://cdn.discordapp.com/attachments/800320654409859103/961304823213457428/PngItem_1081452.png" height="17px" style="float: left;"></button>
+            <button onclick="clipboard('figlet')"><img src="/assets/clipboard.png" height="17px" style="float: left;"></button>
+            <button onclick="navigator.clipboard.writeText('```\n' + document.getElementById('figlet').innerHTML.replaceAll('<br>', '\n') + '\n```\n');"><img src="/assets/markdown.png" height="17px" style="float: left;"></button>
         </fieldset><br>
         <fieldset>
             <legend id="colorLegend">Farbe (nur Discord)</legend>
@@ -65,7 +65,7 @@
             </fieldset><br>
             <div id="color" style="text-align: center; "></div>
             <input name="colorOutput" id="colorOutput" hidden readonly style="float: left; text-align: left;">
-            <button onclick="navigator.clipboard.writeText('```ansi\n' + document.getElementById('colorOutput').value + '\n```\n');"><img src="https://cdn.discordapp.com/attachments/800320654409859103/961304823213457428/PngItem_1081452.png" height="17px" style="float: left;"></button>
+            <button onclick="navigator.clipboard.writeText('```ansi\n' + document.getElementById('colorOutput').value + '\n```\n');"><img src="/assets/markdown.png" height="17px" style="float: left;"></button>
         </fieldset>
     </div>
     <script type="text/javascript">

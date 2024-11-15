@@ -1,5 +1,27 @@
+.light {
+    * {
+        color: black;
+    }
+    body {
+        background-color: white;
+    }
+    .item {
+        border-color: black;
+    }
+}
+.dark {
+    background-color: black;
+    
+    * {
+        color: white;
+    }
+    
+    .item {
+        border-color: white;
+    }
+}
 button, input {
-    color: black;
+    color: black !important;
 }
 .big {
     font-size: 45pt;

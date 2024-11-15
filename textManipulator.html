@@ -14,21 +14,21 @@
         <fieldset>
             <legend id="altLegend">Alternating Case</legend>
             <input name="altNormal" id="altNormal" placeholder="Normaler Text" autofocus style="float: left; text-align: left;">
-            <button onclick="altCase()" style="float: left; text-align: left;">Go!</button><br>
+            <button onclick="altCase()" style="float: right; text-align: left;">Go!</button><br>
             <input name="alt" id="alt" placeholder="aLtErNaTiNg CaSe" readonly style="float: left; text-align: left;">
-            <button onclick="clipboard('alt')"><img src="/assets/clipboard.png" height="17px" style="float: left; text-align: left;"></button>
+            <button onclick="clipboard('alt')"><img src="/assets/clipboard.png" height="17px" style="float: right; text-align: left;"></button>
         </fieldset><br>
         <fieldset>
             <legend id="spaceLegend">Leerzeichen</legend>
             <input name="spaceNormal" id="spaceNormal" placeholder="Normaler Text" style="float: left; text-align: left;">
-            <button onclick="spaceCase()" style="float: left; text-align: left;">Go!</button><br>
+            <button onclick="spaceCase()" style="float: right; text-align: left;">Go!</button><br>
             <input name="space" id="space" placeholder="L e e r z e i c h e n" readonly style="float: left; text-align: left;">
-            <button onclick="clipboard('space')"><img src="/assets/clipboard.png" height="17px" style="float: left; text-align: left;"></button>
+            <button onclick="clipboard('space')"><img src="/assets/clipboard.png" height="17px" style="float: right; text-align: left;"></button>
         </fieldset><br>
         <fieldset>
             <legend id="figletLegend">Figlet</legend>
-            <input name="figletNormal" id="figletNormal" placeholder="Normaler Text">
-            <button onclick="figlet()">Go!</button><br>
+            <input name="figletNormal" id="figletNormal" placeholder="Normaler Text" style="float: left; text-align: left;">
+            <button onclick="figlet()" style="float: right; text-align: left;">Go!</button><br>
             <pre id="figlet" style="text-align: left; "></pre>
             <button onclick="clipboard('figlet')"><img src="/assets/clipboard.png" height="17px" style="float: left;"></button>
             <button onclick="navigator.clipboard.writeText('```\n' + document.getElementById('figlet').innerHTML.replaceAll('<br>', '\n') + '\n```\n');"><img src="/assets/markdown.png" height="17px" style="float: left;"></button>

@@ -14,22 +14,22 @@
         <fieldset>
             <legend id="timestampNowLegend">Zeitstempel (jetzt)</legend>
             <input name="timestampNow" id="timestampNow" placeholder="Zeitstempel" autofocus style="float: left; text-align: left;">
-            <button onclick="document.getElementById('timestampNow').value = new Date().getTime();" style="float: left; text-align: left;">Go!</button><br>
+            <button onclick="document.getElementById('timestampNow').value = new Date().getTime();" style="float: right; text-align: left;">Go!</button><br>
             <button onclick="clipboard('timestampNow')"><img src="/assets/clipboard.png" height="17px" style="float: left; text-align: left;"></button>
         </fieldset><br>
         <fieldset>
             <legend id="timestampOfDateLegend">Zeitstempel (speziell)</legend>
             <input type="datetime-local" name="timestampOfDate" id="timestampOfDate" style="float: left; text-align: left;">
-            <button onclick="document.getElementById('ofDate').value = ~~new Date(document.getElementById('timestampOfDate').value).getTime().toString().substring(0, 10);" style="float: left; text-align: left;">Go!</button><br>
+            <button onclick="document.getElementById('ofDate').value = ~~new Date(document.getElementById('timestampOfDate').value).getTime().toString().substring(0, 10);" style="float: right; text-align: left;">Go!</button><br>
             <input name="ofDate" id="ofDate" placeholder="Zeitstempel" readonly style="float: left; text-align: left; width: 165px;">
-            <button onclick="clipboard('ofDate')"><img src="/assets/clipboard.png" height="17px" style="float: left; text-align: left;"></button>
+            <button onclick="clipboard('ofDate')"><img src="/assets/clipboard.png" height="17px" style="float: right; text-align: left;"></button>
         </fieldset><br>
         <fieldset>
             <legend id="dateOfTimestampLegend">Datum nach Zeitstempel</legend>
             <input name="dateOfTimestamp" id="dateOfTimestamp" placeholder="Zeitstempel" style="float: left; text-align: left;">
-            <button onclick="document.getElementById('ofTimestamp').value = new Date(Number.parseInt(document.getElementById('dateOfTimestamp').value)).toLocaleString();" style="float: left; text-align: left;">Go!</button><br>
+            <button onclick="document.getElementById('ofTimestamp').value = new Date(Number.parseInt(document.getElementById('dateOfTimestamp').value)).toLocaleString();" style="float: right; text-align: left;">Go!</button><br>
             <input name="ofTimestamp" id="ofTimestamp" placeholder="Datum" readonly style="float: left; text-align: left; width: 165px;">
-            <button onclick="clipboard('ofTimestamp')"><img src="/assets/clipboard.png" height="17px" style="float: left; text-align: left;"></button>
+            <button onclick="clipboard('ofTimestamp')"><img src="/assets/clipboard.png" height="17px" style="float: right; text-align: left;"></button>
         </fieldset>
     </div>
     <script>
